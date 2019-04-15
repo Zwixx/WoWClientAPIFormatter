@@ -1,6 +1,52 @@
 <html>
 <head>
 	<title>WoW Client API</title>
+	<style type="text/css">
+		body {
+			border-style: solid;
+			border-width: 50px;
+			border-color: rgb(18, 18, 18);
+			background-color: rgb(18, 18, 18);
+			color: rgb(255, 255, 255);
+		}
+		a {
+			color: rgb(62, 166, 255);
+		}
+		table {
+			border-collapse: collapse;
+			table-layout: fixed;
+			width: 600px;
+		}
+		table, th, td {
+			border: 1px solid rgb(255, 255, 255);
+		}
+		th, td {
+			padding: 5px;
+			text-align: left;
+		}
+		tr:hover{
+			background-color: rgb(58, 58, 58);
+		}
+		tr:nth-child(even) {
+			background-color: rgb(38, 38, 38);
+		}
+		td:nth-child(1) {
+			color: aqua;
+			width: 150px;
+		}
+		td:nth-child(2) {
+			color: aqua;
+			width: 200px;
+		}
+		td:nth-child(3) {
+			color: aqua;
+			width: 100px;
+		}
+		td:nth-child(4) {
+			color: aqua;
+			width: 150px;
+		}
+	</style>
 </head>
 <body>
 	<h1>WoW Client API</h1>
@@ -483,100 +529,84 @@
 				<h3>Structure AlliedRaceInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>raceID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>maleModelID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>femaleModelID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>achievementID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>maleName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>femaleName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>description</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>crestAtlas</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>modelBackgroundAtlas</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>raceFileString</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>ColorMixin</td>
 								<td>bannerColor</td>
-								<td>table</td>
+								<td>table (ColorMixin)</td>
 								<td></td>
 							</tr>
 					</table>
 				<h3>Structure AlliedRaceRacialAbility</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>description</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>icon</td>
 								<td>number</td>
 								<td></td>
@@ -607,49 +637,41 @@
 				<h3>Structure AreaPOIInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>areaPoiID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector2DMixin</td>
 								<td>position</td>
-								<td>table</td>
+								<td>table (Vector2DMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>description</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>textureIndex</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetSetID</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>atlasName</td>
 								<td>string</td>
 								<td>nilable</td>
@@ -667,49 +689,41 @@
 				<h3>Structure ArtifactArtInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>textureKit</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>titleName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>ColorMixin</td>
 								<td>titleColor</td>
-								<td>table</td>
+								<td>table (ColorMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>ColorMixin</td>
 								<td>barConnectedColor</td>
-								<td>table</td>
+								<td>table (ColorMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>ColorMixin</td>
 								<td>barDisconnectedColor</td>
-								<td>table</td>
+								<td>table (ColorMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>uiModelSceneID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>spellVisualKitID</td>
 								<td>number</td>
 								<td></td>
@@ -718,91 +732,76 @@
 				<h3>Structure ArtifactPowerInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>spellID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>cost</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>currentRank</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>maxRank</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>bonusRanks</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>numMaxRankBonusFromTier</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>prereqsMet</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isStart</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isGoldMedal</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isFinal</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>tier</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector2DMixin</td>
 								<td>position</td>
-								<td>table</td>
+								<td>table (Vector2DMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector2DMixin</td>
 								<td>offset</td>
-								<td>table</td>
+								<td>table (Vector2DMixin)</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>linearIndex</td>
 								<td>number</td>
 								<td>nilable</td>
@@ -937,25 +936,21 @@
 				<h3>Enumeration AzeritePowerLevel</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Base</td>
 								<td>AzeritePowerLevel</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Upgraded</td>
 								<td>AzeritePowerLevel</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Downgraded</td>
 								<td>AzeritePowerLevel</td>
 								<td></td>
@@ -964,19 +959,16 @@
 				<h3>Structure AzeriteEmpoweredItemPowerInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>azeritePowerID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>spellID</td>
 								<td>number</td>
 								<td></td>
@@ -985,19 +977,16 @@
 				<h3>Structure AzeriteEmpoweredItemPowerText</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>description</td>
 								<td>string</td>
 								<td></td>
@@ -1006,19 +995,16 @@
 				<h3>Structure AzeriteEmpoweredItemTierInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>azeritePowerIDs</td>
 								<td>table</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>unlockLevel</td>
 								<td>number</td>
 								<td></td>
@@ -1027,19 +1013,16 @@
 				<h3>Structure AzeriteSpecInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>classID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>specID</td>
 								<td>number</td>
 								<td></td>
@@ -1084,19 +1067,16 @@
 				<h3>Structure UnlockedAzeriteEmpoweredItems</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td>ItemLocationMixin</td>
 								<td>unlockedItem</td>
-								<td>table</td>
+								<td>table (ItemLocationMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>tierIndex</td>
 								<td>number</td>
 								<td></td>
@@ -1633,43 +1613,36 @@
 				<h3>Enumeration CalendarEventType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Raid</td>
 								<td>CalendarEventType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Dungeon</td>
 								<td>CalendarEventType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Pvp</td>
 								<td>CalendarEventType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Meeting</td>
 								<td>CalendarEventType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Other</td>
 								<td>CalendarEventType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>HeroicDeprecated</td>
 								<td>CalendarEventType</td>
 								<td></td>
@@ -1678,127 +1651,106 @@
 				<h3>Structure CalendarDayEvent</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>eventID</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>title</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isCustomTitle</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>startTime</td>
 								<td>CalendarTime</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>endTime</td>
 								<td>CalendarTime</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>calendarType</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>sequenceType</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>eventType</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>iconTexture</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>modStatus</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>inviteStatus</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>invitedBy</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>difficulty</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>inviteType</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>sequenceIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>numSequenceDays</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>difficultyName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>dontDisplayBanner</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>dontDisplayEnd</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>clubID</td>
 								<td>string</td>
 								<td></td>
@@ -1807,25 +1759,21 @@
 				<h3>Structure CalendarEventIndexInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>offsetMonths</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>monthDay</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>eventIndex</td>
 								<td>number</td>
 								<td></td>
@@ -1834,103 +1782,86 @@
 				<h3>Structure CalendarEventInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>title</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>description</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>creator</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>eventType</td>
 								<td>CalendarEventType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>repeatOption</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>maxSize</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>textureIndex</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>time</td>
 								<td>CalendarTime</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>lockoutTime</td>
 								<td>CalendarTime</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isLocked</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isAutoApprove</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasPendingInvite</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>inviteStatus</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>inviteType</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>calendarType</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>communityName</td>
 								<td>string</td>
 								<td>nilable</td>
@@ -1939,61 +1870,51 @@
 				<h3>Structure CalendarEventInviteInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>level</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>className</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>classFilename</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>inviteStatus</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>modStatus</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>inviteIsMine</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>type</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>notes</td>
 								<td>string</td>
 								<td></td>
@@ -2002,19 +1923,16 @@
 				<h3>Structure CalendarEventStatusOption</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>optionIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>statusString</td>
 								<td>string</td>
 								<td></td>
@@ -2023,43 +1941,36 @@
 				<h3>Structure CalendarEventTextureInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>title</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>iconTexture</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>expansionLevel</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>difficultyId</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>mapId</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isLfr</td>
 								<td>bool</td>
 								<td>nilable</td>
@@ -2068,19 +1979,16 @@
 				<h3>Structure CalendarEventTypeDisplayInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>displayString</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>eventType</td>
 								<td>CalendarEventType</td>
 								<td></td>
@@ -2089,85 +1997,71 @@
 				<h3>Structure CalendarGuildEventInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>eventID</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>year</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>month</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>monthDay</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>weekday</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hour</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>minute</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>eventType</td>
 								<td>CalendarEventType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>title</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>calendarType</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>texture</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>inviteStatus</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>clubID</td>
 								<td>string</td>
 								<td></td>
@@ -2176,25 +2070,21 @@
 				<h3>Structure CalendarGuildFilterInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>minLevel</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>maxLevel</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>rank</td>
 								<td>number</td>
 								<td></td>
@@ -2203,37 +2093,31 @@
 				<h3>Structure CalendarHolidayInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>description</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>texture</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>startTime</td>
 								<td>CalendarTime</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>endTime</td>
 								<td>CalendarTime</td>
 								<td>nilable</td>
@@ -2242,31 +2126,26 @@
 				<h3>Structure CalendarMonthInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>month</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>year</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>numDays</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>firstWeekday</td>
 								<td>number</td>
 								<td></td>
@@ -2275,43 +2154,36 @@
 				<h3>Structure CalendarRaidInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>calendarType</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>raidID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>time</td>
 								<td>CalendarTime</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>difficulty</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>difficultyName</td>
 								<td>string</td>
 								<td>nilable</td>
@@ -2457,19 +2329,16 @@
 				<h3>Structure ChallengeModeGuildAttemptMember</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>classFileName</td>
 								<td>string</td>
 								<td></td>
@@ -2478,43 +2347,36 @@
 				<h3>Structure ChallengeModeGuildTopAttempt</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>classFileName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>keystoneLevel</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>mapChallengeModeID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isYou</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>members</td>
 								<td>table</td>
 								<td></td>
@@ -8995,31 +8857,26 @@
 				<h3>Enumeration ClubRoleIdentifier</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Owner</td>
 								<td>ClubRoleIdentifier</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Leader</td>
 								<td>ClubRoleIdentifier</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Moderator</td>
 								<td>ClubRoleIdentifier</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Member</td>
 								<td>ClubRoleIdentifier</td>
 								<td></td>
@@ -9028,31 +8885,26 @@
 				<h3>Enumeration ClubType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>BattleNet</td>
 								<td>ClubType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Character</td>
 								<td>ClubType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Guild</td>
 								<td>ClubType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Other</td>
 								<td>ClubType</td>
 								<td></td>
@@ -9061,169 +8913,141 @@
 				<h3>Enumeration ClubActionType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionSubscribe</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionCreate</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionEdit</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionDestroy</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionLeave</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionCreateTicket</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionDestroyTicket</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionRedeemTicket</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionGetTicket</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionGetTickets</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionGetBans</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionGetInvitations</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionRevokeInvitation</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionAcceptInvitation</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionDeclineInvitation</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionCreateStream</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionEditStream</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionDestroyStream</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionInviteMember</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionEditMember</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionEditMemberNote</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionKickMember</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionAddBan</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionRemoveBan</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionCreateMessage</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionEditMessage</td>
 								<td>ClubActionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubActionDestroyMessage</td>
 								<td>ClubActionType</td>
 								<td></td>
@@ -9232,247 +9056,206 @@
 				<h3>Enumeration ClubErrorType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>ErrorCommunitiesNone</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorCommunitiesUnknown</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorCommunitiesNeutralFaction</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorCommunitiesUnknownRealm</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorCommunitiesBadTarget</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorCommunitiesWrongFaction</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorCommunitiesRestricted</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorCommunitiesIgnored</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorCommunitiesGuild</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorCommunitiesWrongRegion</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorCommunitiesUnknownTicket</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorCommunitiesMissingShortName</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorCommunitiesProfanity</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorCommunitiesTrial</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorCommunitiesVeteranTrial</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorCommunitiesChatMute</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubFull</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubNoClub</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubNotMember</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubAlreadyMember</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubNoSuchMember</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubNoSuchInvitation</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubInvitationAlreadyExists</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubInvalidRoleID</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubInsufficientPrivileges</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubTooManyClubsJoined</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubVoiceFull</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubStreamNoStream</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubStreamInvalidName</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubStreamCountAtMin</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubStreamCountAtMax</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubMemberHasRequiredRole</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubSentInvitationCountAtMax</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubReceivedInvitationCountAtMax</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubTargetIsBanned</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubBanAlreadyExists</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubBanCountAtMax</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubTicketCountAtMax</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubTicketNoSuchTicket</td>
 								<td>ClubErrorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorClubTicketHasConsumedAllowedRedeemCount</td>
 								<td>ClubErrorType</td>
 								<td></td>
@@ -9481,49 +9264,41 @@
 				<h3>Enumeration ClubFieldType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>ClubName</td>
 								<td>ClubFieldType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ClubShortName</td>
 								<td>ClubFieldType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ClubDescription</td>
 								<td>ClubFieldType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ClubBroadcast</td>
 								<td>ClubFieldType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ClubStreamName</td>
 								<td>ClubFieldType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ClubStreamSubject</td>
 								<td>ClubFieldType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NumTypes</td>
 								<td>ClubFieldType</td>
 								<td></td>
@@ -9532,43 +9307,36 @@
 				<h3>Enumeration ClubMemberPresence</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Unknown</td>
 								<td>ClubMemberPresence</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Online</td>
 								<td>ClubMemberPresence</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>OnlineMobile</td>
 								<td>ClubMemberPresence</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Offline</td>
 								<td>ClubMemberPresence</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Away</td>
 								<td>ClubMemberPresence</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Busy</td>
 								<td>ClubMemberPresence</td>
 								<td></td>
@@ -9577,25 +9345,21 @@
 				<h3>Enumeration ClubInvitationCandidateStatus</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Available</td>
 								<td>ClubInvitationCandidateStatus</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>InvitePending</td>
 								<td>ClubInvitationCandidateStatus</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>AlreadyMember</td>
 								<td>ClubInvitationCandidateStatus</td>
 								<td></td>
@@ -9604,31 +9368,26 @@
 				<h3>Enumeration ClubRemovedReason</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>None</td>
 								<td>ClubRemovedReason</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Banned</td>
 								<td>ClubRemovedReason</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Removed</td>
 								<td>ClubRemovedReason</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ClubDestroyed</td>
 								<td>ClubRemovedReason</td>
 								<td></td>
@@ -9637,19 +9396,16 @@
 				<h3>Enumeration ClubRestrictionReason</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>None</td>
 								<td>ClubRestrictionReason</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Unavailable</td>
 								<td>ClubRestrictionReason</td>
 								<td></td>
@@ -9658,31 +9414,26 @@
 				<h3>Enumeration ClubStreamType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>General</td>
 								<td>ClubStreamType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Guild</td>
 								<td>ClubStreamType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Officer</td>
 								<td>ClubStreamType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Other</td>
 								<td>ClubStreamType</td>
 								<td></td>
@@ -9691,25 +9442,21 @@
 				<h3>Enumeration ClubStreamNotificationFilter</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>None</td>
 								<td>ClubStreamNotificationFilter</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Mention</td>
 								<td>ClubStreamNotificationFilter</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>All</td>
 								<td>ClubStreamNotificationFilter</td>
 								<td></td>
@@ -9718,109 +9465,91 @@
 				<h3>Enumeration ValidateNameResult</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>NameSuccess</td>
 								<td>ValidateNameResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NameFailure</td>
 								<td>ValidateNameResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NameNoName</td>
 								<td>ValidateNameResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NameTooShort</td>
 								<td>ValidateNameResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NameTooLong</td>
 								<td>ValidateNameResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NameInvalidCharacter</td>
 								<td>ValidateNameResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NameMixedLanguages</td>
 								<td>ValidateNameResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NameProfane</td>
 								<td>ValidateNameResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NameReserved</td>
 								<td>ValidateNameResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NameInvalidApostrophe</td>
 								<td>ValidateNameResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NameMultipleApostrophes</td>
 								<td>ValidateNameResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NameThreeConsecutive</td>
 								<td>ValidateNameResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NameInvalidSpace</td>
 								<td>ValidateNameResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NameConsecutiveSpaces</td>
 								<td>ValidateNameResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NameRussianConsecutiveSilentCharacters</td>
 								<td>ValidateNameResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NameRussianSilentCharacterAtBeginningOrEnd</td>
 								<td>ValidateNameResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NameDeclensionDoesntMatchBaseName</td>
 								<td>ValidateNameResult</td>
 								<td></td>
@@ -9829,73 +9558,61 @@
 				<h3>Structure ClubInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>clubId</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>shortName</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>description</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>broadcast</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>clubType</td>
 								<td>ClubType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>avatarId</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>memberCount</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>favoriteTimeStamp</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>joinTime</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>socialQueueingEnabled</td>
 								<td>bool</td>
 								<td>nilable</td>
@@ -9904,175 +9621,146 @@
 				<h3>Structure ClubMemberInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>isSelf</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>memberId</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>role</td>
 								<td>ClubRoleIdentifier</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>presence</td>
 								<td>ClubMemberPresence</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>clubType</td>
 								<td>ClubType</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>guid</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>bnetAccountId</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>memberNote</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>officerNote</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>classID</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>race</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>level</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>zone</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>achievementPoints</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>profession1ID</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>profession1Rank</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>profession1Name</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>profession2ID</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>profession2Rank</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>profession2Name</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>lastOnlineYear</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>lastOnlineMonth</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>lastOnlineDay</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>lastOnlineHour</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>guildRank</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>guildRankOrder</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isRemoteChat</td>
 								<td>bool</td>
 								<td>nilable</td>
@@ -10081,31 +9769,26 @@
 				<h3>Structure ClubSelfInvitationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>invitationId</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>club</td>
 								<td>ClubInfo</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>inviter</td>
 								<td>ClubMemberInfo</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>leaders</td>
 								<td>table</td>
 								<td></td>
@@ -10114,31 +9797,26 @@
 				<h3>Structure ClubInvitationCandidateInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>memberId</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>priority</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>status</td>
 								<td>ClubInvitationCandidateStatus</td>
 								<td></td>
@@ -10147,25 +9825,21 @@
 				<h3>Structure ClubInvitationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>invitationId</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isMyInvitation</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>invitee</td>
 								<td>ClubMemberInfo</td>
 								<td></td>
@@ -10174,13 +9848,11 @@
 				<h3>Structure ClubLimits</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>maximumNumberOfStreams</td>
 								<td>number</td>
 								<td></td>
@@ -10189,19 +9861,16 @@
 				<h3>Structure ClubMessageIdentifier</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>epoch</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>position</td>
 								<td>number</td>
 								<td></td>
@@ -10210,19 +9879,16 @@
 				<h3>Structure ClubMessageRange</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>oldestMessageId</td>
 								<td>ClubMessageIdentifier</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>newestMessageId</td>
 								<td>ClubMessageIdentifier</td>
 								<td></td>
@@ -10231,43 +9897,36 @@
 				<h3>Structure ClubMessageInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>messageId</td>
 								<td>ClubMessageIdentifier</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>content</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>author</td>
 								<td>ClubMemberInfo</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>destroyer</td>
 								<td>ClubMemberInfo</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>destroyed</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>edited</td>
 								<td>bool</td>
 								<td></td>
@@ -10276,259 +9935,216 @@
 				<h3>Structure ClubPrivilegeInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>canDestroy</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetAttribute</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetName</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetDescription</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetAvatar</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetBroadcast</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetPrivacyLevel</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetOwnMemberAttribute</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetOtherMemberAttribute</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetOwnMemberNote</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetOtherMemberNote</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetOwnVoiceState</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetOwnPresenceLevel</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canUseVoice</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canVoiceMuteMemberForAll</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canGetInvitation</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSendInvitation</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSendGuestInvitation</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canRevokeOwnInvitation</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canRevokeOtherInvitation</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canGetBan</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canGetSuggestion</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSuggestMember</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canGetTicket</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canCreateTicket</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canDestroyTicket</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canAddBan</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canRemoveBan</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canCreateStream</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canDestroyStream</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetStreamPosition</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetStreamAttribute</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetStreamName</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetStreamSubject</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetStreamAccess</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canSetStreamVoiceLevel</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canCreateMessage</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canDestroyOwnMessage</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canDestroyOtherMessage</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canEditOwnMessage</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canPinMessage</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>kickableRoleIds</td>
 								<td>table</td>
 								<td></td>
@@ -10537,43 +10153,36 @@
 				<h3>Structure ClubStreamInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>streamId</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>subject</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>leadersAndModeratorsOnly</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>streamType</td>
 								<td>ClubStreamType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>creationTime</td>
 								<td>number</td>
 								<td></td>
@@ -10582,19 +10191,16 @@
 				<h3>Structure ClubStreamNotificationSetting</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>streamId</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>filter</td>
 								<td>ClubStreamNotificationFilter</td>
 								<td></td>
@@ -10603,49 +10209,41 @@
 				<h3>Structure ClubTicketInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>ticketId</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>allowedRedeemCount</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>currentRedeemCount</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>creationTime</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>expirationTime</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>defaultStreamId</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>creator</td>
 								<td>ClubMemberInfo</td>
 								<td></td>
@@ -11179,19 +10777,16 @@
 				<h3>Structure NameOverrideEntry</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>originalName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>overrideName</td>
 								<td>string</td>
 								<td></td>
@@ -11237,55 +10832,46 @@
 				<h3>Enumeration ConfigurationWarning</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>ShaderModelWillBeOutdated</td>
 								<td>ConfigurationWarning</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ShaderModelIsOutdated</td>
 								<td>ConfigurationWarning</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ConsoleDeviceSseoUtdated</td>
 								<td>ConfigurationWarning</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>DriverBlacklisted</td>
 								<td>ConfigurationWarning</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>DriverOutOfDate</td>
 								<td>ConfigurationWarning</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>DeviceBlacklisted</td>
 								<td>ConfigurationWarning</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>GraphicsApiwIllBeOutdated</td>
 								<td>ConfigurationWarning</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>OsBitsWillBeOutdated</td>
 								<td>ConfigurationWarning</td>
 								<td></td>
@@ -11301,67 +10887,56 @@
 				<h3>Enumeration ConsoleCategory</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>CategoryDebug</td>
 								<td>ConsoleCategory</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>CategoryGraphics</td>
 								<td>ConsoleCategory</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>CategoryConsole</td>
 								<td>ConsoleCategory</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>CategoryCombat</td>
 								<td>ConsoleCategory</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>CategoryGame</td>
 								<td>ConsoleCategory</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>CategoryDefault</td>
 								<td>ConsoleCategory</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>CategoryNet</td>
 								<td>ConsoleCategory</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>CategorySound</td>
 								<td>ConsoleCategory</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>CategoryGm</td>
 								<td>ConsoleCategory</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>CategoryNone</td>
 								<td>ConsoleCategory</td>
 								<td></td>
@@ -11370,79 +10945,66 @@
 				<h3>Enumeration ConsoleColorType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>DefaultColor</td>
 								<td>ConsoleColorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>InputColor</td>
 								<td>ConsoleColorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>EchoColor</td>
 								<td>ConsoleColorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ErrorColor</td>
 								<td>ConsoleColorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>WarningColor</td>
 								<td>ConsoleColorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>GlobalColor</td>
 								<td>ConsoleColorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>AdminColor</td>
 								<td>ConsoleColorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>HighlightColor</td>
 								<td>ConsoleColorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>BackgroundColor</td>
 								<td>ConsoleColorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ClickbufferColor</td>
 								<td>ConsoleColorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>PrivateColor</td>
 								<td>ConsoleColorType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>DefaultGreen</td>
 								<td>ConsoleColorType</td>
 								<td></td>
@@ -11451,25 +11013,21 @@
 				<h3>Enumeration ConsoleCommandType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Cvar</td>
 								<td>ConsoleCommandType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Command</td>
 								<td>ConsoleCommandType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Script</td>
 								<td>ConsoleCommandType</td>
 								<td></td>
@@ -11478,37 +11036,31 @@
 				<h3>Structure ConsoleCommandInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>command</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>help</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>category</td>
 								<td>ConsoleCategory</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>commandType</td>
 								<td>ConsoleCommandType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>scriptContents</td>
 								<td>string</td>
 								<td></td>
@@ -11734,37 +11286,31 @@
 				<h3>Enumeration ContributionState</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>None</td>
 								<td>ContributionState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Building</td>
 								<td>ContributionState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Active</td>
 								<td>ContributionState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>UnderAttack</td>
 								<td>ContributionState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Destroyed</td>
 								<td>ContributionState</td>
 								<td></td>
@@ -11773,13 +11319,11 @@
 				<h3>Enumeration ContributionAppearanceFlags</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>TooltipUseTimeRemaining</td>
 								<td>ContributionAppearanceFlags</td>
 								<td></td>
@@ -11788,55 +11332,46 @@
 				<h3>Enumeration ContributionResult</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Success</td>
 								<td>ContributionResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>MustBeNearNpc</td>
 								<td>ContributionResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IncorrectState</td>
 								<td>ContributionResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>InvalidID</td>
 								<td>ContributionResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>QuestDataMissing</td>
 								<td>ContributionResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>FailedConditionCheck</td>
 								<td>ContributionResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>UnableToCompleteTurnIn</td>
 								<td>ContributionResult</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>InternalError</td>
 								<td>ContributionResult</td>
 								<td></td>
@@ -11845,49 +11380,41 @@
 				<h3>Structure ContributionAppearance</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>stateName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>ColorMixin</td>
 								<td>stateColor</td>
-								<td>table</td>
+								<td>table (ColorMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>tooltipLine</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>tooltipUseTimeRemaining</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>statusBarAtlas</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>borderAtlas</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>bannerAtlas</td>
 								<td>string</td>
 								<td></td>
@@ -11896,37 +11423,31 @@
 				<h3>Structure ContributionMapInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>areaPoiID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector2DMixin</td>
 								<td>position</td>
-								<td>table</td>
+								<td>table (Vector2DMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>atlasName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>collectorCreatureID</td>
 								<td>number</td>
 								<td></td>
@@ -12010,25 +11531,21 @@
 				<h3>Structure ClassInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>className</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>classFile</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>classID</td>
 								<td>number</td>
 								<td></td>
@@ -12037,19 +11554,16 @@
 				<h3>Structure FactionInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>groupTag</td>
 								<td>string</td>
 								<td></td>
@@ -12058,25 +11572,21 @@
 				<h3>Structure RaceInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>raceName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>clientFileString</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>raceID</td>
 								<td>number</td>
 								<td></td>
@@ -12092,43 +11602,36 @@
 				<h3>Structure CurrencyDisplayInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>description</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>icon</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>quality</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>displayAmount</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>actualAmount</td>
 								<td>number</td>
 								<td></td>
@@ -12196,19 +11699,16 @@
 				<h3>Enumeration SelfResurrectOptionType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Spell</td>
 								<td>SelfResurrectOptionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Item</td>
 								<td>SelfResurrectOptionType</td>
 								<td></td>
@@ -12217,43 +11717,36 @@
 				<h3>Structure GraveyardMapInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>areaPoiID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector2DMixin</td>
 								<td>position</td>
-								<td>table</td>
+								<td>table (Vector2DMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>textureIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>graveyardID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isGraveyardSelectable</td>
 								<td>bool</td>
 								<td></td>
@@ -12262,43 +11755,36 @@
 				<h3>Structure SelfResurrectOption</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>optionType</td>
 								<td>SelfResurrectOptionType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>id</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canUse</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isLimited</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>priority</td>
 								<td>number</td>
 								<td></td>
@@ -12481,43 +11967,36 @@
 				<h3>Structure DungeonEntranceMapInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>areaPoiID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector2DMixin</td>
 								<td>position</td>
-								<td>table</td>
+								<td>table (Vector2DMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>description</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>atlasName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>journalInstanceID</td>
 								<td>number</td>
 								<td></td>
@@ -12526,25 +12005,21 @@
 				<h3>Structure EncounterJournalMapEncounterInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>encounterID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>mapX</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>mapY</td>
 								<td>number</td>
 								<td></td>
@@ -12553,79 +12028,66 @@
 				<h3>Structure EncounterJournalSectionInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>spellID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>title</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>description</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>headerType</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>abilityIcon</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>creatureDisplayID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>uiModelSceneID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>siblingSectionID</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>firstChildSectionID</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>filteredByDifficulty</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>link</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>startsOpen</td>
 								<td>bool</td>
 								<td></td>
@@ -12709,19 +12171,16 @@
 				<h3>Structure ExpansionDisplayInfoFeature</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>icon</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>text</td>
 								<td>string</td>
 								<td></td>
@@ -12730,25 +12189,21 @@
 				<h3>Structure ExpansionDisplayInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>logo</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>banner</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>features</td>
 								<td>table</td>
 								<td></td>
@@ -12767,31 +12222,26 @@
 				<h3>Structure FogOfWarInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>fogOfWarID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>backgroundAtlas</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>maskAtlas</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>maskScalar</td>
 								<td>number</td>
 								<td></td>
@@ -12809,67 +12259,56 @@
 				<h3>Structure FriendInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>connected</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>className</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>area</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>notes</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>guid</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>level</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>dnd</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>afk</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>referAFriend</td>
 								<td>bool</td>
 								<td></td>
@@ -12878,55 +12317,46 @@
 				<h3>Structure WhoInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>fullName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>fullGuildName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>level</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>raceStr</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>classStr</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>area</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>filename</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>gender</td>
 								<td>number</td>
 								<td></td>
@@ -13177,19 +12607,16 @@
 				<h3>Structure GarrisonFollowerDeathInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>followerID</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>state</td>
 								<td>number</td>
 								<td></td>
@@ -13198,31 +12625,26 @@
 				<h3>Structure GarrisonPlotInstanceMapInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>buildingPlotInstanceID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector2DMixin</td>
 								<td>position</td>
-								<td>table</td>
+								<td>table (Vector2DMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>atlasName</td>
 								<td>string</td>
 								<td></td>
@@ -13939,31 +13361,26 @@
 				<h3>Structure GossipPoiInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>textureIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector2DMixin</td>
 								<td>position</td>
-								<td>table</td>
+								<td>table (Vector2DMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>inBattleMap</td>
 								<td>bool</td>
 								<td></td>
@@ -14322,31 +13739,26 @@
 				<h3>Enumeration SummonStatus</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>None</td>
 								<td>SummonStatus</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Pending</td>
 								<td>SummonStatus</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Accepted</td>
 								<td>SummonStatus</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Declined</td>
 								<td>SummonStatus</td>
 								<td></td>
@@ -14432,37 +13844,31 @@
 				<h3>Structure InvasionMapInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>invasionID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector2DMixin</td>
 								<td>position</td>
-								<td>table</td>
+								<td>table (Vector2DMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>atlasName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>rewardQuestID</td>
 								<td>number</td>
 								<td>nilable</td>
@@ -14518,19 +13924,16 @@
 				<h3>Structure IslandsQueueDifficultyInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>difficultyId</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>previewRewardQuestId</td>
 								<td>number</td>
 								<td></td>
@@ -14549,181 +13952,151 @@
 				<h3>Enumeration InventoryType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>IndexNonEquipType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexHeadType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexNeckType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexShoulderType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexBodyType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexChestType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexWaistType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexLegsType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexFeetType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexWristType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexHandType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexFingerType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexTrinketType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexWeaponType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexShieldType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexRangedType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexCloakType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Index2HweaponType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexBagType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexTabardType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexRobeType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexWeaponmainhandType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexWeaponoffhandType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexHoldableType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexAmmoType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexThrownType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexRangedrightType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexQuiverType</td>
 								<td>InventoryType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IndexRelicType</td>
 								<td>InventoryType</td>
 								<td></td>
@@ -14732,61 +14105,51 @@
 				<h3>Enumeration ItemQuality</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Poor</td>
 								<td>ItemQuality</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Standard</td>
 								<td>ItemQuality</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Good</td>
 								<td>ItemQuality</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Superior</td>
 								<td>ItemQuality</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Epic</td>
 								<td>ItemQuality</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Legendary</td>
 								<td>ItemQuality</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Artifact</td>
 								<td>ItemQuality</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Heirloom</td>
 								<td>ItemQuality</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>WoWToken</td>
 								<td>ItemQuality</td>
 								<td></td>
@@ -14994,13 +14357,11 @@
 				<h3>Enumeration CustomBindingType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>VoicePushToTalk</td>
 								<td>CustomBindingType</td>
 								<td></td>
@@ -15252,67 +14613,56 @@
 				<h3>Structure LfgEntryData</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>activityID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>requiredItemLevel</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>requiredHonorLevel</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>comment</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>voiceChat</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>duration</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>autoAccept</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>privateGroup</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>questID</td>
 								<td>number</td>
 								<td>nilable</td>
@@ -15321,49 +14671,41 @@
 				<h3>Structure LfgApplicantData</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>applicantID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>applicationStatus</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>pendingApplicationStatus</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>numMembers</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isNew</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>comment</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>displayOrderID</td>
 								<td>number</td>
 								<td></td>
@@ -15372,103 +14714,86 @@
 				<h3>Structure LfgSearchResultData</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>searchResultID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>activityID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>leaderName</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>comment</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>voiceChat</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>requiredItemLevel</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>requiredHonorLevel</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>numMembers</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>numBNetFriends</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>numCharFriends</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>numGuildMates</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isDelisted</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>autoAccept</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>age</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>questID</td>
 								<td>number</td>
 								<td>nilable</td>
@@ -15477,73 +14802,61 @@
 				<h3>Structure WowLocale</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>enUS</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>koKR</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>frFR</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>deDE</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>zhCN</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>zhTW</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>esES</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>esMX</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ruRU</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ptBR</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>itIT</td>
 								<td>bool</td>
 								<td></td>
@@ -16375,67 +15688,56 @@
 				<h3>Enumeration TransmogSource</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>None</td>
 								<td>TransmogSource</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>JournalEncounter</td>
 								<td>TransmogSource</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Quest</td>
 								<td>TransmogSource</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Vendor</td>
 								<td>TransmogSource</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>WorldDrop</td>
 								<td>TransmogSource</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>HiddenUntilCollected</td>
 								<td>TransmogSource</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>CantCollect</td>
 								<td>TransmogSource</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Achievement</td>
 								<td>TransmogSource</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Profession</td>
 								<td>TransmogSource</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NotValidForTransmog</td>
 								<td>TransmogSource</td>
 								<td></td>
@@ -16547,37 +15849,31 @@
 				<h3>Enumeration MapCanvasPosition</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>None</td>
 								<td>MapCanvasPosition</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>BottomLeft</td>
 								<td>MapCanvasPosition</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>BottomRight</td>
 								<td>MapCanvasPosition</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>TopLeft</td>
 								<td>MapCanvasPosition</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>TopRight</td>
 								<td>MapCanvasPosition</td>
 								<td></td>
@@ -16586,49 +15882,41 @@
 				<h3>Enumeration UIMapType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Cosmic</td>
 								<td>UIMapType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>World</td>
 								<td>UIMapType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Continent</td>
 								<td>UIMapType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Zone</td>
 								<td>UIMapType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Dungeon</td>
 								<td>UIMapType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Micro</td>
 								<td>UIMapType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Orphan</td>
 								<td>UIMapType</td>
 								<td></td>
@@ -16637,25 +15925,21 @@
 				<h3>Enumeration UIMapSystem</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>World</td>
 								<td>UIMapSystem</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Taxi</td>
 								<td>UIMapSystem</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Adventure</td>
 								<td>UIMapSystem</td>
 								<td></td>
@@ -16664,49 +15948,41 @@
 				<h3>Structure UiMapLayerInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>layerWidth</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>layerHeight</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>tileWidth</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>tileHeight</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>minScale</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>maxScale</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>additionalZoomSteps</td>
 								<td>number</td>
 								<td></td>
@@ -16715,31 +15991,26 @@
 				<h3>Structure MapBannerInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>areaPoiID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>atlasName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>uiTextureKit</td>
 								<td>string</td>
 								<td>nilable</td>
@@ -16748,31 +16019,26 @@
 				<h3>Structure UiMapDetails</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>mapID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>mapType</td>
 								<td>UIMapType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>parentMapID</td>
 								<td>number</td>
 								<td></td>
@@ -16781,25 +16047,21 @@
 				<h3>Structure UiMapGroupMemberInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>mapID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>relativeHeightIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
@@ -16808,37 +16070,31 @@
 				<h3>Structure MapLinkInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>areaPoiID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector2DMixin</td>
 								<td>position</td>
-								<td>table</td>
+								<td>table (Vector2DMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>atlasName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>linkedUiMapID</td>
 								<td>number</td>
 								<td></td>
@@ -16859,31 +16115,26 @@
 				<h3>Structure UiMapExplorationHitRect</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>top</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>bottom</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>left</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>right</td>
 								<td>number</td>
 								<td></td>
@@ -16892,49 +16143,41 @@
 				<h3>Structure UiMapExplorationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>textureWidth</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>textureHeight</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>offsetX</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>offsetY</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isShownByMouseOver</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>fileDataIDs</td>
 								<td>table</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hitRect</td>
 								<td>UiMapExplorationHitRect</td>
 								<td></td>
@@ -17007,19 +16250,16 @@
 				<h3>Structure MountCreatureDisplayInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>creatureDisplayID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isVisible</td>
 								<td>bool</td>
 								<td></td>
@@ -17051,19 +16291,16 @@
 				<h3>Structure MythicPlusKeystoneAffix</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>id</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>seasonID</td>
 								<td>number</td>
 								<td></td>
@@ -17072,37 +16309,31 @@
 				<h3>Structure MythicPlusDate</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>year</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>month</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>day</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hour</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>minute</td>
 								<td>number</td>
 								<td></td>
@@ -17111,25 +16342,21 @@
 				<h3>Structure MythicPlusMember</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>specID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>classID</td>
 								<td>number</td>
 								<td></td>
@@ -17138,37 +16365,31 @@
 				<h3>Structure MapSeasonBestInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>durationSec</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>level</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>completionDate</td>
 								<td>MythicPlusDate</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>affixIDs</td>
 								<td>table</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>members</td>
 								<td>table</td>
 								<td></td>
@@ -17410,37 +16631,31 @@
 				<h3>Enumeration PartyRequestJoinRelation</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>None</td>
 								<td>PartyRequestJoinRelation</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Friend</td>
 								<td>PartyRequestJoinRelation</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Guild</td>
 								<td>PartyRequestJoinRelation</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Club</td>
 								<td>PartyRequestJoinRelation</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NumPartyRequestJoinRelations</td>
 								<td>PartyRequestJoinRelation</td>
 								<td></td>
@@ -17701,49 +16916,41 @@
 				<h3>Structure PartyPoseInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>partyPoseID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>mapID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetSetID</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>victoryModelSceneID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>defeatModelSceneID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>victorySoundKitID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>defeatSoundKitID</td>
 								<td>number</td>
 								<td></td>
@@ -17759,37 +16966,31 @@
 				<h3>Structure PetTamerMapInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>areaPoiID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector2DMixin</td>
 								<td>position</td>
-								<td>table</td>
+								<td>table (Vector2DMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>atlasName</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>textureIndex</td>
 								<td>number</td>
 								<td>nilable</td>
@@ -18000,31 +17201,26 @@
 				<h3>Enumeration BrawlType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>None</td>
 								<td>BrawlType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Battleground</td>
 								<td>BrawlType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Arena</td>
 								<td>BrawlType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Lfg</td>
 								<td>BrawlType</td>
 								<td></td>
@@ -18033,19 +17229,16 @@
 				<h3>Structure BattlefieldCurrencyReward</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>id</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>quantity</td>
 								<td>number</td>
 								<td></td>
@@ -18054,31 +17247,26 @@
 				<h3>Structure BattlefieldItemReward</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>id</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>texture</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>quantity</td>
 								<td>number</td>
 								<td></td>
@@ -18087,49 +17275,41 @@
 				<h3>Structure BattlemasterListInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>instanceType</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>minPlayers</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>maxPlayers</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>icon</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>longDescription</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>shortDescription</td>
 								<td>string</td>
 								<td></td>
@@ -18138,49 +17318,41 @@
 				<h3>Structure PvpBrawlInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>shortDescription</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>longDescription</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>canQueue</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>timeLeftUntilNextChange</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>brawlType</td>
 								<td>BrawlType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>mapNames</td>
 								<td>table</td>
 								<td></td>
@@ -18189,31 +17361,26 @@
 				<h3>Structure PvpScalingData</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>scalingDataID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>specializationID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>value</td>
 								<td>number</td>
 								<td></td>
@@ -18222,25 +17389,21 @@
 				<h3>Structure HonorRewardInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>honorLevelName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>badgeFileDataID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>achievementRewardedID</td>
 								<td>number</td>
 								<td></td>
@@ -18249,49 +17412,41 @@
 				<h3>Structure PvpTierInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>descendRating</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ascendRating</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>descendTier</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ascendTier</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>pvpTierEnum</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>tierIconID</td>
 								<td>number</td>
 								<td></td>
@@ -18300,37 +17455,31 @@
 				<h3>Structure RandomBGInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>canQueue</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>bgID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasRandomWinToday</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>minLevel</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>maxLevel</td>
 								<td>number</td>
 								<td></td>
@@ -18514,49 +17663,41 @@
 				<h3>Structure QuestChoiceInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>choiceID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>questionText</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>numOptions</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>uiTextureKitID</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>soundKitID</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hideWarboardHeader</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>keepOpenAfterChoice</td>
 								<td>bool</td>
 								<td></td>
@@ -18565,97 +17706,81 @@
 				<h3>Structure QuestChoiceOptionInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>responseID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>buttonText</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>description</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>header</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>choiceArtID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>confirmation</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetSetID</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>disabledButton</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>desaturatedArt</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>groupID</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>headerIconAtlasElement</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>subHeader</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>buttonTooltip</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>rewardQuestID</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>soundKitID</td>
 								<td>number</td>
 								<td>nilable</td>
@@ -18674,25 +17799,21 @@
 				<h3>Enumeration QuestLineFloorLocation</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Above</td>
 								<td>QuestLineFloorLocation</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Below</td>
 								<td>QuestLineFloorLocation</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Same</td>
 								<td>QuestLineFloorLocation</td>
 								<td></td>
@@ -18701,61 +17822,51 @@
 				<h3>Structure QuestLineInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>questLineName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>questName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>questLineID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>questID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>x</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>y</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isHidden</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isLegendary</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>floorLocation</td>
 								<td>QuestLineFloorLocation</td>
 								<td></td>
@@ -18771,67 +17882,56 @@
 				<h3>Enumeration QuestTag</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Group</td>
 								<td>QuestTag</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Pvp</td>
 								<td>QuestTag</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Raid</td>
 								<td>QuestTag</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Dungeon</td>
 								<td>QuestTag</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Legendary</td>
 								<td>QuestTag</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Heroic</td>
 								<td>QuestTag</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Raid10</td>
 								<td>QuestTag</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Raid25</td>
 								<td>QuestTag</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Scenario</td>
 								<td>QuestTag</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Account</td>
 								<td>QuestTag</td>
 								<td></td>
@@ -18840,37 +17940,31 @@
 				<h3>Structure QuestObjectiveInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>text</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>type</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>finished</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>numFulfilled</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>numRequired</td>
 								<td>number</td>
 								<td></td>
@@ -18879,37 +17973,31 @@
 				<h3>Structure QuestOnMapInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>questID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>x</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>y</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>type</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isMapIndicatorQuest</td>
 								<td>bool</td>
 								<td></td>
@@ -19130,49 +18218,41 @@
 				<h3>Structure TaskPOIData</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>questId</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>x</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>y</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>inProgress</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>numObjectives</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>mapID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>childDepth</td>
 								<td>number</td>
 								<td>nilable</td>
@@ -19290,31 +18370,26 @@
 				<h3>Structure DigSiteMapInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>researchSiteID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector2DMixin</td>
 								<td>position</td>
-								<td>table</td>
+								<td>table (Vector2DMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>textureIndex</td>
 								<td>number</td>
 								<td></td>
@@ -19701,145 +18776,121 @@
 				<h3>Structure SocialQueueConfig</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>TOASTS_DISABLED</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>TOAST_DURATION</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>DELAY_DURATION</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>QUEUE_MULTIPLIER</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>PLAYER_MULTIPLIER</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>PLAYER_FRIEND_VALUE</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>PLAYER_GUILD_VALUE</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>THROTTLE_INITIAL_THRESHOLD</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>THROTTLE_DECAY_TIME</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>THROTTLE_PRIORITY_SPIKE</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>THROTTLE_MIN_THRESHOLD</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>THROTTLE_PVP_PRIORITY_NORMAL</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>THROTTLE_PVP_PRIORITY_LOW</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>THROTTLE_PVP_HONOR_THRESHOLD</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>THROTTLE_LFGLIST_PRIORITY_DEFAULT</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>THROTTLE_LFGLIST_PRIORITY_ABOVE</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>THROTTLE_LFGLIST_PRIORITY_BELOW</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>THROTTLE_LFGLIST_ILVL_SCALING_ABOVE</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>THROTTLE_LFGLIST_ILVL_SCALING_BELOW</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>THROTTLE_RF_PRIORITY_ABOVE</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>THROTTLE_RF_ILVL_SCALING_ABOVE</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>THROTTLE_DF_MAX_ITEM_LEVEL</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>THROTTLE_DF_BEST_PRIORITY</td>
 								<td>number</td>
 								<td></td>
@@ -19848,19 +18899,16 @@
 				<h3>Structure SocialQueuePlayerInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>guid</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>clubId</td>
 								<td>string</td>
 								<td>nilable</td>
@@ -19869,49 +18917,41 @@
 				<h3>Structure SocialQueueGroupQueueInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>clientID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>eligible</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>needTank</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>needHealer</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>needDamage</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isAutoAccept</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>queueData</td>
 								<td>QueueSpecificInfo</td>
 								<td></td>
@@ -19968,25 +19008,21 @@
 				<h3>Structure PvpTalentSlotInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>enabled</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>selectedTalentID</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>availableTalentIDs</td>
 								<td>table</td>
 								<td></td>
@@ -20543,25 +19579,21 @@
 				<h3>Enumeration FlightPathFaction</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Neutral</td>
 								<td>FlightPathFaction</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Horde</td>
 								<td>FlightPathFaction</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Alliance</td>
 								<td>FlightPathFaction</td>
 								<td></td>
@@ -20570,25 +19602,21 @@
 				<h3>Enumeration FlightPathState</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Current</td>
 								<td>FlightPathState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Reachable</td>
 								<td>FlightPathState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Unreachable</td>
 								<td>FlightPathState</td>
 								<td></td>
@@ -20597,43 +19625,36 @@
 				<h3>Structure TaxiNodeInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>nodeID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector2DMixin</td>
 								<td>position</td>
-								<td>table</td>
+								<td>table (Vector2DMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>state</td>
 								<td>FlightPathState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>slotIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>textureKitPrefix</td>
 								<td>string</td>
 								<td>nilable</td>
@@ -20642,43 +19663,36 @@
 				<h3>Structure MapTaxiNodeInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>nodeID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector2DMixin</td>
 								<td>position</td>
-								<td>table</td>
+								<td>table (Vector2DMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>atlasName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>faction</td>
 								<td>FlightPathFaction</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>textureKitPrefix</td>
 								<td>string</td>
 								<td>nilable</td>
@@ -20709,67 +19723,56 @@
 				<h3>Structure AtlasInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>width</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>height</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>leftTexCoord</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>rightTexCoord</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>topTexCoord</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>bottomTexCoord</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>tilesHorizontally</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>tilesVertically</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>file</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>filename</td>
 								<td>string</td>
 								<td>nilable</td>
@@ -21204,13 +20207,11 @@
 				<h3>Enumeration ModelSceneSetting</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>AlignLightToOrbitDelta</td>
 								<td>ModelSceneSetting</td>
 								<td></td>
@@ -21219,103 +20220,86 @@
 				<h3>Enumeration ModelSceneType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>MountJournal</td>
 								<td>ModelSceneType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>PetJournalCard</td>
 								<td>ModelSceneType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ShopCard</td>
 								<td>ModelSceneType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>EncounterJournal</td>
 								<td>ModelSceneType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>PetJournalLoadout</td>
 								<td>ModelSceneType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ArtifactTier2</td>
 								<td>ModelSceneType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ArtifactTier2ForgingScene</td>
 								<td>ModelSceneType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ArtifactTier2SlamEffect</td>
 								<td>ModelSceneType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>CommentatorVictoryFanfare</td>
 								<td>ModelSceneType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ArtifactRelicTalentEffect</td>
 								<td>ModelSceneType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>PvpWarModeOrb</td>
 								<td>ModelSceneType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>PvpWarModeFire</td>
 								<td>ModelSceneType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>PartyPose</td>
 								<td>ModelSceneType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>AzeriteItemLevelUpToast</td>
 								<td>ModelSceneType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>AzeritePowers</td>
 								<td>ModelSceneType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>AzeriteRewardGlow</td>
 								<td>ModelSceneType</td>
 								<td></td>
@@ -21324,31 +20308,26 @@
 				<h3>Enumeration ItemTryOnReason</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Success</td>
 								<td>ItemTryOnReason</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>WrongRace</td>
 								<td>ItemTryOnReason</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NotEquippable</td>
 								<td>ItemTryOnReason</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>DataPending</td>
 								<td>ItemTryOnReason</td>
 								<td></td>
@@ -21357,49 +20336,41 @@
 				<h3>Structure UIModelSceneActorDisplayInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>animation</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>animationVariation</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>animSpeed</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>animationKitID</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>spellVisualKitID</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>alpha</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>scale</td>
 								<td>number</td>
 								<td></td>
@@ -21408,73 +20379,61 @@
 				<h3>Structure UIModelSceneActorInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>modelActorID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>scriptTag</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector3DMixin</td>
 								<td>position</td>
-								<td>table</td>
+								<td>table (Vector3DMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>yaw</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>pitch</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>roll</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>normalizeScaleAggressiveness</td>
 								<td>number</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>useCenterForOriginX</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>useCenterForOriginY</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>useCenterForOriginZ</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>modelActorDisplayID</td>
 								<td>number</td>
 								<td>nilable</td>
@@ -21483,97 +20442,81 @@
 				<h3>Structure UIModelSceneCameraInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>modelSceneCameraID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>scriptTag</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>cameraType</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector3DMixin</td>
 								<td>target</td>
-								<td>table</td>
+								<td>table (Vector3DMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>yaw</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>pitch</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>roll</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>zoomDistance</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>minZoomDistance</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>maxZoomDistance</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td>Vector3DMixin</td>
 								<td>zoomedTargetOffset</td>
-								<td>table</td>
+								<td>table (Vector3DMixin)</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>zoomedYawOffset</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>zoomedPitchOffset</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>zoomedRollOffset</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>flags</td>
 								<td>ModelSceneSetting</td>
 								<td></td>
@@ -21591,19 +20534,16 @@
 				<h3>Enumeration WidgetShownState</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Hidden</td>
 								<td>WidgetShownState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Shown</td>
 								<td>WidgetShownState</td>
 								<td></td>
@@ -21612,31 +20552,26 @@
 				<h3>Enumeration WidgetEnabledState</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Disabled</td>
 								<td>WidgetEnabledState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Enabled</td>
 								<td>WidgetEnabledState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Red</td>
 								<td>WidgetEnabledState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Highlight</td>
 								<td>WidgetEnabledState</td>
 								<td></td>
@@ -21645,25 +20580,21 @@
 				<h3>Enumeration IconState</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Hidden</td>
 								<td>IconState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ShowState1</td>
 								<td>IconState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ShowState2</td>
 								<td>IconState</td>
 								<td></td>
@@ -21672,49 +20603,41 @@
 				<h3>Enumeration StatusBarValueTextType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Hidden</td>
 								<td>StatusBarValueTextType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Percentage</td>
 								<td>StatusBarValueTextType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Value</td>
 								<td>StatusBarValueTextType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Time</td>
 								<td>StatusBarValueTextType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>TimeShowOneLevelOnly</td>
 								<td>StatusBarValueTextType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ValueOverMax</td>
 								<td>StatusBarValueTextType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ValueOverMaxNormalized</td>
 								<td>StatusBarValueTextType</td>
 								<td></td>
@@ -21723,97 +20646,81 @@
 				<h3>Enumeration UIWidgetVisualizationType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>IconAndText</td>
 								<td>UIWidgetVisualizationType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>CaptureBar</td>
 								<td>UIWidgetVisualizationType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>StatusBar</td>
 								<td>UIWidgetVisualizationType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>DoubleStatusBar</td>
 								<td>UIWidgetVisualizationType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IconTextAndBackground</td>
 								<td>UIWidgetVisualizationType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>DoubleIconAndText</td>
 								<td>UIWidgetVisualizationType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>StackedResourceTracker</td>
 								<td>UIWidgetVisualizationType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>IconTextAndCurrencies</td>
 								<td>UIWidgetVisualizationType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>TextWithState</td>
 								<td>UIWidgetVisualizationType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>HorizontalCurrencies</td>
 								<td>UIWidgetVisualizationType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>BulletTextList</td>
 								<td>UIWidgetVisualizationType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ScenarioHeaderCurrenciesAndBackground</td>
 								<td>UIWidgetVisualizationType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>TextureWithState</td>
 								<td>UIWidgetVisualizationType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>SpellDisplay</td>
 								<td>UIWidgetVisualizationType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>DoubleStateIconRow</td>
 								<td>UIWidgetVisualizationType</td>
 								<td></td>
@@ -21822,31 +20729,26 @@
 				<h3>Enumeration IconAndTextWidgetState</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Hidden</td>
 								<td>IconAndTextWidgetState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Shown</td>
 								<td>IconAndTextWidgetState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ShownWithDynamicIconFlashing</td>
 								<td>IconAndTextWidgetState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ShownWithDynamicIconNotFlashing</td>
 								<td>IconAndTextWidgetState</td>
 								<td></td>
@@ -21855,25 +20757,21 @@
 				<h3>Enumeration SpellDisplayIconSizeType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Small</td>
 								<td>SpellDisplayIconSizeType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Medium</td>
 								<td>SpellDisplayIconSizeType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Large</td>
 								<td>SpellDisplayIconSizeType</td>
 								<td></td>
@@ -21882,19 +20780,16 @@
 				<h3>Enumeration WidgetCurrencyClass</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Currency</td>
 								<td>WidgetCurrencyClass</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Item</td>
 								<td>WidgetCurrencyClass</td>
 								<td></td>
@@ -21903,43 +20798,36 @@
 				<h3>Structure BulletTextListWidgetVisualizationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>shownState</td>
 								<td>WidgetShownState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>enabledState</td>
 								<td>WidgetEnabledState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>lines</td>
 								<td>table</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasTimer</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>orderIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetTag</td>
 								<td>string</td>
 								<td></td>
@@ -21948,49 +20836,41 @@
 				<h3>Structure CaptureBarWidgetVisualizationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>shownState</td>
 								<td>WidgetShownState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>barPercent</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>neutralPercent</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>textureKitID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasTimer</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>orderIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetTag</td>
 								<td>string</td>
 								<td></td>
@@ -21999,67 +20879,56 @@
 				<h3>Structure DoubleIconAndTextWidgetVisualizationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>shownState</td>
 								<td>WidgetShownState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>label</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>leftText</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>leftTooltip</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>rightText</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>rightTooltip</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>textureKitID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasTimer</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>orderIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetTag</td>
 								<td>string</td>
 								<td></td>
@@ -22068,25 +20937,21 @@
 				<h3>Structure UIWidgetStateIconInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>iconState</td>
 								<td>IconState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>state1Tooltip</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>state2Tooltip</td>
 								<td>string</td>
 								<td></td>
@@ -22095,49 +20960,41 @@
 				<h3>Structure DoubleStateIconRowVisualizationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>shownState</td>
 								<td>WidgetShownState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>leftIcons</td>
 								<td>table</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>rightIcons</td>
 								<td>table</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>textureKitID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasTimer</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>orderIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetTag</td>
 								<td>string</td>
 								<td></td>
@@ -22146,91 +21003,76 @@
 				<h3>Structure DoubleStatusBarWidgetVisualizationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>shownState</td>
 								<td>WidgetShownState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>leftBarMin</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>leftBarMax</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>leftBarValue</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>rightBarMin</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>rightBarMax</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>rightBarValue</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>barValueTextType</td>
 								<td>StatusBarValueTextType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>text</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>barWidth</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>textureKitID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasTimer</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>orderIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetTag</td>
 								<td>string</td>
 								<td></td>
@@ -22239,25 +21081,21 @@
 				<h3>Structure UIWidgetInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>widgetID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetSetID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetType</td>
 								<td>UIWidgetVisualizationType</td>
 								<td></td>
@@ -22266,37 +21104,31 @@
 				<h3>Structure UIWidgetCurrencyInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>iconFileID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>leadingText</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>text</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>tooltip</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isCurrencyMaxed</td>
 								<td>bool</td>
 								<td></td>
@@ -22305,37 +21137,31 @@
 				<h3>Structure HorizontalCurrenciesWidgetVisualizationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>shownState</td>
 								<td>WidgetShownState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>currencies</td>
 								<td>table</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasTimer</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>orderIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetTag</td>
 								<td>string</td>
 								<td></td>
@@ -22344,55 +21170,46 @@
 				<h3>Structure IconAndTextWidgetVisualizationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>state</td>
 								<td>IconAndTextWidgetState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>text</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>tooltip</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>dynamicTooltip</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>textureKitID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasTimer</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>orderIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetTag</td>
 								<td>string</td>
 								<td></td>
@@ -22401,43 +21218,36 @@
 				<h3>Structure IconTextAndBackgroundWidgetVisualizationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>shownState</td>
 								<td>WidgetShownState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>text</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>textureKitID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasTimer</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>orderIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetTag</td>
 								<td>string</td>
 								<td></td>
@@ -22446,73 +21256,61 @@
 				<h3>Structure IconTextAndCurrenciesWidgetVisualizationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>shownState</td>
 								<td>WidgetShownState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>enabledState</td>
 								<td>WidgetEnabledState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>descriptionShownState</td>
 								<td>WidgetShownState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>descriptionEnabledState</td>
 								<td>WidgetEnabledState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>text</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>description</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>currencies</td>
 								<td>table</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>textureKitID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasTimer</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>orderIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetTag</td>
 								<td>string</td>
 								<td></td>
@@ -22521,49 +21319,41 @@
 				<h3>Structure ScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>shownState</td>
 								<td>WidgetShownState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>currencies</td>
 								<td>table</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>frameTextureKitID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>leftCurrencyWidth</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasTimer</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>orderIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetTag</td>
 								<td>string</td>
 								<td></td>
@@ -22572,19 +21362,16 @@
 				<h3>Structure UIWidgetSpellInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>spellID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>tooltip</td>
 								<td>string</td>
 								<td></td>
@@ -22593,55 +21380,46 @@
 				<h3>Structure SpellDisplayVisualizationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>shownState</td>
 								<td>WidgetShownState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>enabledState</td>
 								<td>WidgetEnabledState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>spellInfo</td>
 								<td>UIWidgetSpellInfo</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>iconSizeType</td>
 								<td>SpellDisplayIconSizeType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetWidth</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasTimer</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>orderIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetTag</td>
 								<td>string</td>
 								<td></td>
@@ -22650,43 +21428,36 @@
 				<h3>Structure StackedResourceTrackerWidgetVisualizationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>shownState</td>
 								<td>WidgetShownState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>resources</td>
 								<td>table</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>frameTextureKitID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasTimer</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>orderIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetTag</td>
 								<td>string</td>
 								<td></td>
@@ -22695,85 +21466,71 @@
 				<h3>Structure StatusBarWidgetVisualizationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>shownState</td>
 								<td>WidgetShownState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>barMin</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>barMax</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>barValue</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>text</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>tooltip</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>barWidth</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>barValueTextType</td>
 								<td>StatusBarValueTextType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>frameTextureKitID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>fillTextureKitID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasTimer</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>orderIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetTag</td>
 								<td>string</td>
 								<td></td>
@@ -22782,49 +21539,41 @@
 				<h3>Structure TextWithStateWidgetVisualizationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>shownState</td>
 								<td>WidgetShownState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>enabledState</td>
 								<td>WidgetEnabledState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>text</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetWidth</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasTimer</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>orderIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetTag</td>
 								<td>string</td>
 								<td></td>
@@ -22833,49 +21582,41 @@
 				<h3>Structure TextureWithStateVisualizationInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>shownState</td>
 								<td>WidgetShownState</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>backgroundTextureKitID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>portraitTextureKitID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasTimer</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>orderIndex</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>widgetTag</td>
 								<td>string</td>
 								<td></td>
@@ -22906,139 +21647,116 @@
 				<h3>Enumeration PowerType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>HealthCost</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>None</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Mana</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Rage</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Focus</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Energy</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ComboPoints</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Runes</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>RunicPower</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>SoulShards</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>LunarPower</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>HolyPower</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Alternate</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Maelstrom</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Chi</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Insanity</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Obsolete</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Obsolete2</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ArcaneCharges</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Fury</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Pain</td>
 								<td>PowerType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>NumPowerTypes</td>
 								<td>PowerType</td>
 								<td></td>
@@ -23047,73 +21765,61 @@
 				<h3>Enumeration PvpUnitClassification</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>FlagCarrierHorde</td>
 								<td>PvpUnitClassification</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>FlagCarrierAlliance</td>
 								<td>PvpUnitClassification</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>FlagCarrierNeutral</td>
 								<td>PvpUnitClassification</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>CartRunnerHorde</td>
 								<td>PvpUnitClassification</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>CartRunnerAlliance</td>
 								<td>PvpUnitClassification</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>AssassinHorde</td>
 								<td>PvpUnitClassification</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>AssassinAlliance</td>
 								<td>PvpUnitClassification</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>OrbCarrierBlue</td>
 								<td>PvpUnitClassification</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>OrbCarrierGreen</td>
 								<td>PvpUnitClassification</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>OrbCarrierOrange</td>
 								<td>PvpUnitClassification</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>OrbCarrierPurple</td>
 								<td>PvpUnitClassification</td>
 								<td></td>
@@ -24719,25 +23425,21 @@
 				<h3>Structure GxAdapterInfoDetails</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isLowPower</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isExternal</td>
 								<td>bool</td>
 								<td></td>
@@ -24759,19 +23461,16 @@
 				<h3>Enumeration VignetteType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Normal</td>
 								<td>VignetteType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>PvpBounty</td>
 								<td>VignetteType</td>
 								<td></td>
@@ -24780,85 +23479,71 @@
 				<h3>Structure VignetteInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>vignetteGUID</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>objectGUID</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isDead</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>onWorldMap</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>onMinimap</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isUnique</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>inFogOfWar</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>atlasName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>hasTooltip</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>vignetteID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>type</td>
 								<td>VignetteType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>rewardQuestID</td>
 								<td>number</td>
 								<td></td>
@@ -24894,19 +23579,16 @@
 				<h3>Enumeration CommunicationMode</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>PushToTalk</td>
 								<td>CommunicationMode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>OpenMic</td>
 								<td>CommunicationMode</td>
 								<td></td>
@@ -24915,145 +23597,121 @@
 				<h3>Enumeration VoiceChatStatusCode</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Success</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>OperationPending</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>TooManyRequests</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>LoginProhibited</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ClientNotInitialized</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ClientNotLoggedIn</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ClientAlreadyLoggedIn</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ChannelNameTooShort</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ChannelNameTooLong</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ChannelAlreadyExists</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>AlreadyInChannel</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>TargetNotFound</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Failure</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ServiceLost</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>UnableToLaunchProxy</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ProxyConnectionTimeOut</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ProxyConnectionUnableToConnect</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>ProxyConnectionUnexpectedDisconnect</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Disabled</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>UnsupportedChatChannelType</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>InvalidCommunityStream</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>PlayerSilenced</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>PlayerVoiceChatParentalDisabled</td>
 								<td>VoiceChatStatusCode</td>
 								<td></td>
@@ -25062,37 +23720,31 @@
 				<h3>Structure VoiceAudioDevice</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>deviceID</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>displayName</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>power</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isActive</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isSystemDefault</td>
 								<td>bool</td>
 								<td></td>
@@ -25101,43 +23753,36 @@
 				<h3>Structure VoiceChatMember</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>energy</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>memberID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isActive</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isSpeaking</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isMutedForAll</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isSilenced</td>
 								<td>bool</td>
 								<td></td>
@@ -25146,73 +23791,61 @@
 				<h3>Structure VoiceChatChannel</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>channelID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>channelType</td>
 								<td>ChatChannelType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>clubId</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>streamId</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>volume</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isActive</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isMuted</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isTransmitting</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>isLocalProcess</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>members</td>
 								<td>table</td>
 								<td></td>
@@ -25221,19 +23854,16 @@
 				<h3>Structure VoiceChatProcess</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>channels</td>
 								<td>table</td>
 								<td></td>
@@ -25833,25 +24463,21 @@
 				<h3>Structure CampaignChapterInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>description</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>rewardQuestID</td>
 								<td>number</td>
 								<td></td>
@@ -25860,43 +24486,36 @@
 				<h3>Structure CampaignInfo</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>name</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>description</td>
 								<td>string</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>uiTextureKitID</td>
 								<td>number</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>visibilityConditionMatched</td>
 								<td>bool</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>playerConditionFailedReason</td>
 								<td>string</td>
 								<td>nilable</td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>complete</td>
 								<td>bool</td>
 								<td></td>
@@ -26078,31 +24697,26 @@
 				<h3>Enumeration ZoneAbilityType</h3>
 					<table border="1">
 						<tr>
-							<td>Mixin</td>
 							<td>Name</td>
 							<td>Type</td>
 							<td>Nilable</td>
 						</tr>
 							<tr>
-								<td></td>
 								<td>Garrison</td>
 								<td>ZoneAbilityType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>OrderHall</td>
 								<td>ZoneAbilityType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>Argus</td>
 								<td>ZoneAbilityType</td>
 								<td></td>
 							</tr>
 							<tr>
-								<td></td>
 								<td>WarEffort</td>
 								<td>ZoneAbilityType</td>
 								<td></td>
