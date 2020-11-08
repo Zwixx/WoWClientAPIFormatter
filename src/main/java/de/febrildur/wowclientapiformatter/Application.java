@@ -39,13 +39,24 @@ public class Application {
 		
 		List<WoWAPI> apiFiltered = new ArrayList<>();
 		
-		String[] apiNames = new String[6];
+		String[] apiNames = new String[17];
 		apiNames[0] = "AuctionHouse";
 		apiNames[1] = "Calendar";
-		apiNames[2] = "ChatChannel";
-		apiNames[3] = "GarrTalent";
-		apiNames[4] = "QuestSession";
-		apiNames[5] = "RafLink";
+		apiNames[2] = "ChrCustomization";
+		apiNames[3] = "ChatChannel";
+		apiNames[4] = "CallingStates";
+		apiNames[5] = "Damageclass";
+		apiNames[6] = "GarrTalent";
+		apiNames[7] = "Garrison";
+		apiNames[8] = "Inventory";
+		apiNames[9] = "RuneforgePowerState";
+		apiNames[10] = "LevelConstsExposed";
+		apiNames[11] = "PlayerMentorship";
+		apiNames[12] = "QuestTagType";
+		apiNames[13] = "QuestSession";
+		apiNames[14] = "RafLink";
+		apiNames[15] = "SuperTrackingType";
+		apiNames[16] = "UIWidget";
 		
 		
 		int unknownApi = 0;
@@ -53,6 +64,7 @@ public class Application {
 			if (api.getName() == null) {
 				if (!api.getTables().isEmpty() || api.getEvents() != null || api.getFunctions() != null) {
 					api.setName("Unnamed API " + apiNames[unknownApi++]);
+					//api.setName("Unnamed API XXX");
 				}
 			}
 			if (api.getName() != null) {
@@ -61,8 +73,7 @@ public class Application {
 			
 		}
 		
-		HtmlOutput o = new HtmlOutput();
-		o.Output(apiFiltered);
+		HtmlOutput.Output(apiFiltered);
 	}
 
 }
